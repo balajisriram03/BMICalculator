@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <div>
+        <main>
+            <div class="main">
+                <nav>
+                    <h2>BMI Calculator</h2>
+                </nav>
+                <div class="ele">
+                    <label for="ele">Height in centimeters (cm)</label>
+                    <input type = "text" name="ele" id="ele" >
+                </div>
+                <div class="mass">
+                    <label for="mass">Weight in kilograms (kg):</label>
+                     <label for="mass" id="mass">0</label>
+                    <div>
+                        <input type="button" value="-" id="decrement">
+                        <input type="button" value="+" id="increment">
+                     </div>
+                </div>
+            </div>
+            <div id="adjuster">
+                <div>
+                    <p id="stage">NORMAL</p>
+                    <p id="range">24</p>
+                    <p id="recrange">Revised BMI range suggestion: 18.5 to 24.0 kg/m²</p>
+                    <p id="comment"> "You have a healthy body weight!"</p>
+                                </div>
+            </div>
+        </main>
+        <footer>
+            Compute your BMI
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>

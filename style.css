@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: white; */
+    font-family: sans-serif;
+  }
+
+  body{
+    color:#f5f7fa;
+    background-color: black;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+
+  }
+  nav>h1{
+    display: inline-block;
+  }
+  main{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+.main,#adjuster{
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+#adjuster{
+    position: absolute;
+    top: 100%;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #adjuster>div{
+    background-color: #616265;
+    border-radius: 10px;
+    margin: 30px;
+  }
+
+  #stage{
+    font-size: 24px;
+    padding: 20px;
+    color: pink;
+  }
+  #range{
+    font-size: 70px;
+    color: red;
+  }
+  #increment:active{
+  background-color: black;
+  }
+  #decrement:active{
+  background-color: black;
+  }
+  #recrange{
+    font-size: 20px;
+    padding: 20px;
+  }
+  #comment{
+    font-size: 20px;
+    padding: 30px;
+  }
+  .main>div{
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: #616265;
+  }
+  div{
+    display: flex;
+    flex-direction: column;
+  }
+  .ele>input{
+    background-color: #616265;
+    border: none;
+    box-shadow: none;
+    border: 2px solid white;
+    font-size: 45px;
+    margin-top: 10px;
+    width: 320px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .main>.ele{
+    margin: 10px;
+  }
+  .mass{
+    width: fit-content;
+    margin: auto;
+  }
+  .mass>div{
+    display: flex;
+    flex-direction: row;
+    /* gap: 30px; */
+    justify-content: space-evenly;
+  }
+  .mass>div>input{
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    line-height: 50px;
+    font-size: 30px;
+    color: white;
+    background-color: darkgrey;
+  }
+  #mass{
+    font-size: 60px;
+  }
+  footer{
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    color: white;
+    background-color: orange;
+    border-radius: 0 0 10px 10px;
+  }
+  footer:hover{
+  background-color: lightyellow;
+  color: orange;
+  }
+  @media screen and (max-width:440px){
+  h2{
+    font-size:22px;
+  }
+  nav{
+    gap:10px;
+  }
+  body>div{
+    width:95%;
+  }
+  .ele>input{
+    width:100%;
+  }
+  }
+  
