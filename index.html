@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>BMI Calculator</title>
 </head>
@@ -12,19 +14,22 @@
         <main>
             <div class="main">
                 <nav>
+                    <i id="hamicon" class="fas fa-bars icon"></i>
                     <h2>BMI Calculator</h2>
                 </nav>
                 <div class="ele">
                     <label for="ele">Height in centimeters (cm)</label>
-                    <input type = "text" name="ele" id="ele" >
+                    <input type = "number" name="ele" id="ele" min="0" >
                 </div>
                 <div class="mass">
                     <label for="mass">Weight in kilograms (kg):</label>
-                     <label for="mass" id="mass">0</label>
+                     <label for="mass" id="mass">50</label>
                     <div>
                         <input type="button" value="-" id="decrement">
                         <input type="button" value="+" id="increment">
                      </div>
+                     
+
                 </div>
             </div>
             <div id="adjuster">
@@ -39,6 +44,7 @@
         <footer>
             Compute your BMI
         </footer>
+        
     </div>
     <script src="script.js"></script>
     </body>
